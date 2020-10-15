@@ -2,10 +2,10 @@
 
 namespace CodingChallenge.Data.Interfaces
 {
-     interface IFormaGeometrica
+     public interface IFormaGeometrica
     {
-        decimal _lado { get; set; }
-        Formas Tipo { get; set; }
+        EnumFormas Tipo { get; }
+        string obtenerKey(bool esPlural);
         decimal CalcularArea();
         decimal CalcularPerimetro();
     }
